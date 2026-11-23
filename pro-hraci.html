@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <!-- Zakladni nastaveni stranky -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#09070b" name="theme-color">
+    <meta content="CS2 Pro Setupy: výbava hráčů NiKo, m0NESY, donk, s1mple, ropz a b1t." name="description">
+    <title>CS2 Pro Setupy | PAY2WIN</title>
+    <script src="js/theme.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themes.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <!-- Horni lista s logem a menu -->
+      <div class="container header-inner">
+        <a aria-label="PAY2WIN – domů" class="logo" href="index.html"><span class="logo-mark">P2W</span><span class="logo-word">PAY<em>2</em>WIN</span></a>
+        <nav aria-label="Hlavní navigace" class="nav" id="main-nav">
+          <!-- Odkazy hlavni navigace -->
+          <a class="nav-link" href="index.html">Domů</a>
+          <a class="nav-link" href="katalog.html">Katalog</a>
+          <a class="nav-link" href="znacky.html">Značky</a>
+          <a aria-current="page" class="nav-link" href="pro-hraci.html">CS2 Pro Setupy</a>
+
+        </nav>
+        <div class="header-actions">
+          <!-- Vyhledavani, motiv, ucet a kosik -->
+          <form action="katalog.html" class="searchbox" method="get" role="search">
+            <!-- Vyhledavani produktu -->
+            <svg fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 5 5"></path></svg>
+            <input aria-label="Hledat produkty" name="q" placeholder="Hledat vybavení">
+          </form>
+          <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Přepnout na světlý režim" title="Přepnout na světlý režim">
+            <!-- Prepinani svetleho a tmaveho motivu -->
+            <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.1 15.8A8.3 8.3 0 0 1 8.2 3.9 8.6 8.6 0 1 0 20.1 15.8Z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-theme-label>Světlá</span>
+          </button>
+          <a aria-label="Účet" class="icon-btn" href="prihlaseni.html"><svg viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></a>
+          <a aria-label="Košík" class="icon-btn" href="kosik.html"><svg viewbox="0 0 24 24"><path d="M4 8h16l-1 13H5L4 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="cart-count" data-cart-count="">0</span></a>
+          <button aria-controls="main-nav" aria-expanded="false" aria-label="Otevřít menu" class="icon-btn menu-toggle"><svg viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <!-- Hlavni obsah stranky -->
+      <section class="pro-header">
+        <!-- Uvod CS2 setupu -->
+        <div class="container">
+          <div class="breadcrumb"><a href="index.html">Domů</a><span>/</span>CS2 Pro Setupy</div>
+          <div class="pro-header-main">
+            <div>
+
+              <h1>CS2 PRO <span class="accent">SETUPS</span></h1>
+              <p>Myš, podložka a headset. Podívej se, jaké periferie používají známí profesionálové Counter-Strike 2.</p>
+              <div class="pro-badges">
+                <span>6 HRÁČŮ</span>
+                <span>3 ZAŘÍZENÍ</span>
+                <span>OVĚŘENÉ ZDROJE</span>
+              </div>
+            </div>
+            <div aria-hidden="true" class="pro-header-side">
+              <strong>CS<span>2</span></strong>
+              <small>GEAR DATABASE // P2W</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" style="padding-top:30px">
+        <!-- Vyber CS2 hracu -->
+        <div class="container">
+          <div class="pro-toolbar">
+            <div>
+
+              <h2>Vyber si <span class="accent">hráče</span></h2>
+            </div>
+            <div class="pro-search-wrap">
+              <!-- Vyhledavani hracu a tymu -->
+              <label for="pro-search">HLEDAT HRÁČE</label>
+              <input autocomplete="off" id="pro-search" placeholder="Hráč nebo tým" type="search">
+            </div>
+          </div>
+          <p class="pro-intro-note">Profily jsou informační přehled vybavení podle ProSettings, stav ověřen 30. 10. 2026. Hráči mohou gear kdykoli změnit. <strong>V katalogu najdeš také podložky SteelSeries, VAXEE a ZOWIE</strong>. Nevydané prototypy do prodeje nezařazujeme.</p>
+          <!-- Vypis profilu hracu -->
+          <div class="pro-grid" id="pro-players-grid"></div>
+          <div class="pro-bottom-note">
+            <!-- Odkaz na vlastni setup -->
+            <div>
+
+              <h2>Tvůj aim a tvoje vybavení</h2>
+              <p>Inspiruj se profíky a vyber si vlastní kombinaci z katalogu PAY2WIN.</p>
+            </div>
+            <a class="btn btn-primary" href="katalog.html">Zobrazit katalog</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Paticka webu -->
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Odkazy v paticce -->
+          <div>
+            <a class="logo" href="index.html"><span class="logo-mark">P2W</span><span class="logo-word">PAY<em>2</em>WIN</span></a>
+            <p>Výběr herních periferií pro kompetitivní hráče.</p>
+          </div>
+          <div>
+            <h4>Navigace</h4>
+            <a href="index.html">Domů</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="znacky.html">Značky</a>
+            <a href="pro-hraci.html">CS2 Pro Setupy</a>
+          </div>
+          <div>
+            <h4>Kategorie</h4>
+            <a href="katalog.html?kategorie=mys">Myši</a>
+            <a href="katalog.html?kategorie=klavesnice">Klávesnice</a>
+            <a href="katalog.html?kategorie=sluchatka">Sluchátka</a>
+            <a href="katalog.html?kategorie=podlozky">Podložky</a>
+            <a href="katalog.html?kategorie=dongly">Dongly</a>
+          </div>
+          <div>
+            <h4>Účet a košík</h4>
+            <a href="prihlaseni.html">Přihlášení (demo)</a>
+            <a href="kosik.html">Košík (demo)</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div aria-live="polite" class="toast" id="toast" role="status"></div>
+    <!-- Nacteni dat produktu -->
+    <script src="js/products.js"></script>
+    <script src="js/pro-players.js"></script>
+    <!-- Funkce katalogu a kosiku -->
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

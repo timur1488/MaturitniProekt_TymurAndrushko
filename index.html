@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <!-- Zakladni nastaveni stranky -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#09070b" name="theme-color">
+    <meta content="PAY2WIN – ukázkový katalog herních periferií. Školní maturitní projekt." name="description">
+    <title>Gaming periferie | PAY2WIN</title>
+    <script src="js/theme.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themes.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <!-- Horni lista s logem a menu -->
+      <div class="container header-inner">
+        <a aria-label="PAY2WIN – domů" class="logo" href="index.html"><span class="logo-mark">P2W</span><span class="logo-word">PAY<em>2</em>WIN</span></a>
+        <nav aria-label="Hlavní navigace" class="nav" id="main-nav">
+          <!-- Odkazy hlavni navigace -->
+          <a aria-current="page" class="nav-link" href="index.html">Domů</a>
+          <a class="nav-link" href="katalog.html">Katalog</a>
+          <a class="nav-link" href="znacky.html">Značky</a>
+          <a class="nav-link" href="pro-hraci.html">CS2 Pro Setupy</a>
+
+        </nav>
+        <div class="header-actions">
+          <!-- Vyhledavani, motiv, ucet a kosik -->
+          <form action="katalog.html" class="searchbox" method="get" role="search">
+            <!-- Vyhledavani produktu -->
+            <svg fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 5 5"></path></svg>
+            <input aria-label="Hledat produkty" name="q" placeholder="Hledat vybavení">
+          </form>
+          <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Přepnout na světlý režim" title="Přepnout na světlý režim">
+            <!-- Prepinani svetleho a tmaveho motivu -->
+            <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.1 15.8A8.3 8.3 0 0 1 8.2 3.9 8.6 8.6 0 1 0 20.1 15.8Z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-theme-label>Světlá</span>
+          </button>
+          <a aria-label="Účet" class="icon-btn" href="prihlaseni.html"><svg viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></a>
+          <a aria-label="Košík" class="icon-btn" href="kosik.html"><svg viewbox="0 0 24 24"><path d="M4 8h16l-1 13H5L4 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="cart-count" data-cart-count="">0</span></a>
+          <button aria-controls="main-nav" aria-expanded="false" aria-label="Otevřít menu" class="icon-btn menu-toggle"><svg viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <!-- Hlavni obsah stranky -->
+      <section class="hero">
+        <!-- Uvodni banner -->
+        <div class="container">
+          <div class="hero-shell">
+            <div class="hero-copy">
+
+              <h1>HRAJ<br><span>RYCHLEJI</span><br>PŘESNĚJI</h1>
+              <p>Pečlivě vybraný herní hardware. Myši, klávesnice, podložky a headsety pro každý vítězný moment.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="katalog.html">Prozkoumat katalog</a>
+                <a class="btn btn-secondary" href="znacky.html">Naše značky</a>
+                <a class="btn btn-secondary" href="pro-hraci.html">CS2 Pro Setupy</a>
+              </div>
+              <div class="hero-note">
+                <span>33 demo produktů</span>
+                <span>5 kategorií</span>
+                <span>Pro esports hráče</span>
+              </div>
+            </div>
+            <div aria-hidden="true" class="hero-visual">
+              <div class="glow"></div>
+              <img alt="" class="hero-device hero-device--s1mple" src="assets/hero/s1mple-zero-opposition.png">
+            </div>
+          </div>
+          <div class="perks">
+            <div class="perk">
+              <span class="perk-icon">◎</span>
+              <div>
+                <strong>Vyladěno pro výkon</strong>
+                <small>Vybavení pro přesnější hraní</small>
+              </div>
+            </div>
+            <div class="perk">
+              <span class="perk-icon">⌘</span>
+              <div>
+                <strong>Ověřené značky</strong>
+                <small>Logitech, Razer, HyperX, ZOWIE, SteelSeries, Artisan + VAXEE</small>
+              </div>
+            </div>
+            <div class="perk">
+              <span class="perk-icon">◇</span>
+              <div>
+                <strong>Jednoduchý výběr</strong>
+                <small>Přehledné kategorie a filtry</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <!-- Kategorie produktu -->
+        <div class="container">
+          <div class="section-head">
+            <div>
+
+              <h2 class="section-title">Kategorie vybavení</h2>
+            </div>
+
+          </div>
+          <div class="category-grid">
+            <a class="cat-card" href="katalog.html?kategorie=mys">
+              <span class="cat-num">01</span>
+              <div class="cat-icon">
+                <svg aria-hidden="true" viewbox="0 0 100 90"><path d="M48 7c-20 0-30 15-30 33v9c0 18 12 30 30 30s30-12 30-30v-9C78 22 67 7 48 7Z"></path><path d="M48 8v25m0 0H21m27 0h27"></path><rect height="15" rx="5" width="10" x="43" y="18"></rect></svg>
+              </div>
+              <h3>Herní myši</h3>
+            </a>
+            <a class="cat-card" href="katalog.html?kategorie=klavesnice">
+              <span class="cat-num">02</span>
+              <div class="cat-icon">
+                <svg aria-hidden="true" viewbox="0 0 100 90"><rect height="49" rx="7" width="91" x="4" y="19"></rect><path d="M14 30h9m7 0h8m7 0h8m7 0h8m7 0h9M14 41h9m7 0h8m7 0h8m7 0h8m7 0h9M14 53h9m7 0h38m7 0h9"></path></svg>
+              </div>
+              <h3>Klávesnice</h3>
+            </a>
+            <a class="cat-card" href="katalog.html?kategorie=podlozky">
+              <span class="cat-num">03</span>
+              <div class="cat-icon">
+                <svg aria-hidden="true" viewbox="0 0 100 90"><rect height="57" rx="8" width="81" x="8" y="14"></rect><path d="M14 60q37-22 68-30M14 21h68"></path><circle cx="52" cy="39" r="9"></circle></svg>
+              </div>
+              <h3>Podložky</h3>
+            </a>
+            <a class="cat-card" href="katalog.html?kategorie=sluchatka">
+              <span class="cat-num">04</span>
+              <div class="cat-icon">
+                <svg aria-hidden="true" viewbox="0 0 100 90"><path d="M15 46V35a34 34 0 0 1 68 0v11"></path><rect height="29" rx="8" width="19" x="9" y="41"></rect><rect height="29" rx="8" width="19" x="70" y="41"></rect><path d="M79 69q-5 16-22 16H50"></path></svg>
+              </div>
+              <h3>Sluchátka</h3>
+            </a>
+            <a class="cat-card" href="katalog.html?kategorie=dongly">
+              <span class="cat-num">05</span>
+              <div class="cat-icon">
+                <svg aria-hidden="true" viewbox="0 0 100 90"><rect height="50" rx="8" width="42" x="29" y="30"></rect><path d="M42 30V8h17v22M40 16h21M41 55h18"></path><circle cx="50" cy="63" r="4"></circle></svg>
+              </div>
+              <h3>Dongly</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section" style="padding-top:12px">
+        <!-- Oblibene produkty -->
+        <div class="container">
+          <div class="section-head">
+            <div>
+
+              <h2 class="section-title">Oblíbené produkty</h2>
+            </div>
+            <a class="view-all" href="katalog.html">Celý katalog</a>
+          </div>
+          <!-- Vlozeni doporucenych produktu -->
+          <div class="product-grid" id="featured-products"></div>
+        </div>
+      </section>
+      <section class="section" style="padding-top:4px">
+        <!-- Loga a odkazy znacek -->
+        <div class="container">
+          <div class="section-head">
+            <div>
+
+              <h2 class="section-title">Značky, kterým věříš</h2>
+            </div>
+            <a class="view-all" href="znacky.html">Všechny značky</a>
+          </div>
+          <div class="brand-grid">
+            <!-- Karty hernich znacek -->
+            <a class="brand-card brand-card--logo" href="katalog.html?znacka=logitech" aria-label="Produkty značky Logitech"><img alt="Logitech — logo" class="brand-logo-img logo-tone-invert-dark" height="90" loading="lazy" src="assets/brands/logitech-symbol.png" width="160"/></a>
+            <a class="brand-card brand-card--logo" href="katalog.html?znacka=razer" aria-label="Produkty značky Razer"><img alt="Razer — logo" class="brand-logo-img" height="90" loading="lazy" src="assets/brands/razer-symbol.png" width="160"/></a>
+            <a class="brand-card brand-card--logo" href="katalog.html?znacka=hyperx" aria-label="Produkty značky HyperX"><img alt="Hyperx — logo" class="brand-logo-img logo-tone-invert-dark" height="90" loading="lazy" src="assets/brands/hyperx-symbol.png" width="160"/></a>
+            <a class="brand-card brand-card--logo" href="katalog.html?znacka=zowie" aria-label="Produkty značky ZOWIE"><img alt="Zowie — logo" class="brand-logo-img" height="90" loading="lazy" src="assets/brands/zowie-symbol.png" width="160"/></a>
+            <a class="brand-card brand-card--logo" href="katalog.html?znacka=steelseries" aria-label="Produkty značky SteelSeries"><img alt="Steelseries — logo" class="brand-logo-img logo-tone-invert-dark" height="90" loading="lazy" src="assets/brands/steelseries-symbol.png" width="160"/></a>
+            <a class="brand-card brand-card--logo" href="katalog.html?znacka=artisan" aria-label="Produkty značky Artisan"><img alt="Artisan — logo" class="brand-logo-img logo-tone-invert-dark" height="90" loading="lazy" src="assets/brands/artisan-symbol.png" width="160"/></a>
+          </div>
+        </div>
+      </section>
+      <section class="section pro-teaser">
+        <!-- Odkaz na CS2 setupy -->
+        <div class="container">
+          <div class="pro-teaser-wrap">
+            <div>
+
+              <h2>Hraj jako <span class="accent">pro</span></h2>
+              <p>Jaké myši, podložky a headsety používají NiKo, donk nebo m0NESY? Prohlédni si jejich skutečné sestavy a porovnej vybavení.</p>
+              <a class="btn btn-primary" href="pro-hraci.html">Prohlédnout pro setupy</a>
+            </div>
+            <div aria-hidden="true" class="pro-teaser-art">
+              <span>NIKO</span>
+              <span>DONK</span>
+              <span>M0NESY</span>
+              <strong>P2W / CS2</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Paticka webu -->
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Odkazy v paticce -->
+          <div>
+            <a class="logo" href="index.html"><span class="logo-mark">P2W</span><span class="logo-word">PAY<em>2</em>WIN</span></a>
+            <p>Výběr herních periferií pro kompetitivní hráče.</p>
+          </div>
+          <div>
+            <h4>Navigace</h4>
+            <a href="index.html">Domů</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="znacky.html">Značky</a>
+            <a href="pro-hraci.html">CS2 Pro Setupy</a>
+          </div>
+          <div>
+            <h4>Kategorie</h4>
+            <a href="katalog.html?kategorie=mys">Myši</a>
+            <a href="katalog.html?kategorie=klavesnice">Klávesnice</a>
+            <a href="katalog.html?kategorie=sluchatka">Sluchátka</a>
+            <a href="katalog.html?kategorie=podlozky">Podložky</a>
+            <a href="katalog.html?kategorie=dongly">Dongly</a>
+          </div>
+          <div>
+            <h4>Účet a košík</h4>
+            <a href="prihlaseni.html">Přihlášení (demo)</a>
+            <a href="kosik.html">Košík (demo)</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div aria-live="polite" class="toast" id="toast" role="status"></div>
+    <!-- Nacteni dat produktu -->
+    <script src="js/products.js"></script>
+    <!-- Funkce katalogu a kosiku -->
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

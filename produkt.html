@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <!-- Zakladni nastaveni stranky -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#09070b" name="theme-color">
+    <meta content="PAY2WIN – ukázkový katalog herních periferií. Školní maturitní projekt." name="description">
+    <title>Detail produktu | PAY2WIN</title>
+    <script src="js/theme.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themes.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <!-- Horni lista s logem a menu -->
+      <div class="container header-inner">
+        <a aria-label="PAY2WIN – domů" class="logo" href="index.html"><span class="logo-mark">P2W</span><span class="logo-word">PAY<em>2</em>WIN</span></a>
+        <nav aria-label="Hlavní navigace" class="nav" id="main-nav">
+          <!-- Odkazy hlavni navigace -->
+          <a class="nav-link" href="index.html">Domů</a>
+          <a class="nav-link" href="katalog.html">Katalog</a>
+          <a class="nav-link" href="znacky.html">Značky</a>
+          <a class="nav-link" href="pro-hraci.html">CS2 Pro Setupy</a>
+
+        </nav>
+        <div class="header-actions">
+          <!-- Vyhledavani, motiv, ucet a kosik -->
+          <form action="katalog.html" class="searchbox" method="get" role="search">
+            <!-- Vyhledavani produktu -->
+            <svg fill="none" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.5 16.5 5 5"></path></svg>
+            <input aria-label="Hledat produkty" name="q" placeholder="Hledat vybavení">
+          </form>
+          <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Přepnout na světlý režim" title="Přepnout na světlý režim">
+            <!-- Prepinani svetleho a tmaveho motivu -->
+            <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20.1 15.8A8.3 8.3 0 0 1 8.2 3.9 8.6 8.6 0 1 0 20.1 15.8Z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-theme-label>Světlá</span>
+          </button>
+          <a aria-label="Účet" class="icon-btn" href="prihlaseni.html"><svg viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></a>
+          <a aria-label="Košík" class="icon-btn" href="kosik.html"><svg viewbox="0 0 24 24"><path d="M4 8h16l-1 13H5L4 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="cart-count" data-cart-count="">0</span></a>
+          <button aria-controls="main-nav" aria-expanded="false" aria-label="Otevřít menu" class="icon-btn menu-toggle"><svg viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <!-- Hlavni obsah stranky -->
+      <div class="container">
+        <div class="page-intro" style="padding-bottom:4px">
+          <!-- Nadpis a zpetna navigace -->
+          <div class="breadcrumb">
+            <a href="index.html">Domů</a>
+            <span>/</span>
+            <a href="katalog.html">Katalog</a>
+            <span>/</span>
+            <span id="product-breadcrumb">Detail produktu</span>
+          </div>
+        </div>
+        <!-- Nacteni produktu podle ID -->
+        <div class="detail-layout" id="product-detail"></div>
+        <section class="detail-other">
+          <!-- Podobne produkty -->
+          <div class="section-head">
+            <div>
+
+              <h2 class="section-title">Podobné produkty</h2>
+            </div>
+            <a class="view-all" href="katalog.html">Celý katalog</a>
+          </div>
+          <div class="product-grid" id="related-products"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <!-- Paticka webu -->
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Odkazy v paticce -->
+          <div>
+            <a class="logo" href="index.html"><span class="logo-mark">P2W</span><span class="logo-word">PAY<em>2</em>WIN</span></a>
+            <p>Výběr herních periferií pro kompetitivní hráče.</p>
+          </div>
+          <div>
+            <h4>Navigace</h4>
+            <a href="index.html">Domů</a>
+            <a href="katalog.html">Katalog</a>
+            <a href="znacky.html">Značky</a>
+            <a href="pro-hraci.html">CS2 Pro Setupy</a>
+          </div>
+          <div>
+            <h4>Kategorie</h4>
+            <a href="katalog.html?kategorie=mys">Myši</a>
+            <a href="katalog.html?kategorie=klavesnice">Klávesnice</a>
+            <a href="katalog.html?kategorie=sluchatka">Sluchátka</a>
+            <a href="katalog.html?kategorie=podlozky">Podložky</a>
+            <a href="katalog.html?kategorie=dongly">Dongly</a>
+          </div>
+          <div>
+            <h4>Účet a košík</h4>
+            <a href="prihlaseni.html">Přihlášení (demo)</a>
+            <a href="kosik.html">Košík (demo)</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div aria-live="polite" class="toast" id="toast" role="status"></div>
+    <!-- Nacteni dat produktu -->
+    <script src="js/products.js"></script>
+    <!-- Funkce katalogu a kosiku -->
+    <script defer src="js/main.js"></script>
+    <script defer src="js/logitech-gallery.js"></script>
+  </body>
+</html>
